@@ -3,12 +3,25 @@
 <html>
 <head>
   <title>Dhrubo Jyoti Paul</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <head>
 <body>
   Under Construction
   
+  <div id="vue-app">
+      {{testdata}}
+  </div>
   
   
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+      var vue = new Vue({
+          el: "#vue-app",
+          data: {
+              testdata: "Hello"
+          }
+      });
+      
+  </script>
+  
 </body>
 </html>
