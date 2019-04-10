@@ -1,6 +1,7 @@
 import {education} from "/components/education.js";
 import {experience} from "/components/experience.js";
 import {home} from "/components/home.js";
+import {blogList} from "/components/blogList.js";
 import {blog} from "/components/blog.js";
 
  var website = {
@@ -18,12 +19,13 @@ import {blog} from "/components/blog.js";
 };
 
 const router = new VueRouter({
-    mode: 'history',
+    //mode: 'history',
     routes: [
         { path: '/', component: home },
         { path: '/education', component: education },
         { path: '/experience', component: experience },
-        { path: '/blog', component: blog },
+        { path: '/blog/:id', component: blog },
+        { path: '/blog', component: blogList },
     ],
     path: '*', redirect: '/'
 });

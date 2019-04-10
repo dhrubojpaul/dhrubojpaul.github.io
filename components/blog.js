@@ -1,34 +1,26 @@
-var data = {
-    name: "Blog",
-    dataList: [
-        {
-            id: 10042019,
-            title: "Junior Software Engineer", 
-            text: "dhrubojpaul-experience-reve-jse",
-            date: new Date("2019-04-10"),
-        },
-        {
-            id: 11042019,
-            title: "Software Engineer", 
-            text: "dhrubojpaul-experience-reve-jse",
-            date: new Date("2019-04-11"),
-        }
-    ]
-};
+import {blogs} from "/components/blogList.js";
 
 export var blog = {
-    data() {
-        return data;
+    data: function(){
+        return {
+            selectedBlog : blogs.filter(function (item) {
+                return item.id == this.$route.params.id;
+            }, this)[0]
+        }
+    },
+    watch: {
+        '$route' (to, from) {
+            this.selectedBlog = blogs.filter(function (item) {
+                return item.id == to.params.id;
+            }, this)[0];
+        }
     },
     template: `
     <div>
-        <h1>{{name}}</h1>
-        <ul>
-            <li :id="data.id" v-for="data in dataList">
-                <h3>{{data.title}}</h3>
-            </li>      
-        </ul>
-
+        <h1>{{selectedBlog.title}}</h1>
+        <h6>written on {{selectedBlog.date}}</h6>
+        <div v-html="selectedBlog.text"></div>
     </div>
     `
 }
+
