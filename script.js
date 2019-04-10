@@ -13,7 +13,9 @@ import {blog} from "/components/blog.js";
             <router-link to="/experience">Experience</router-link>
             <router-link to="/blogs">Blog</router-link>
         </p>
-        <router-view></router-view>
+        <transition name="fade" mode="out-in">
+            <router-view></router-view>
+        </transition>
     </div>
     `
 };
