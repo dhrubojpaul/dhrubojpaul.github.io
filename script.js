@@ -11,7 +11,7 @@ import {blog} from "/components/blog.js";
         <p>
             <router-link to="/education">Education</router-link>
             <router-link to="/experience">Experience</router-link>
-            <router-link to="/blog">Blog</router-link>
+            <router-link to="/blogs">Blog</router-link>
         </p>
         <router-view></router-view>
     </div>
@@ -19,7 +19,6 @@ import {blog} from "/components/blog.js";
 };
 
 const router = new VueRouter({
-    //mode: 'history',
     routes: [
         { path: '/', component: home },
         { path: '/education', component: education },
