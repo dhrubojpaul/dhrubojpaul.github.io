@@ -25,7 +25,7 @@ const router = new VueRouter({
         { path: '/education', component: education },
         { path: '/experience', component: experience },
         { path: '/blog/:id', component: blog },
-        { path: '/blog', component: blogList },
+        { path: '/blogs', component: blogList },
     ],
     path: '*', redirect: '/'
 });
