@@ -18,6 +18,7 @@ import {blog} from "/components/blog.js";
 };
 
 const router = new VueRouter({
+    mode: 'history',
     routes: [
         { path: '/', component: home },
         { path: '/education', component: education },
