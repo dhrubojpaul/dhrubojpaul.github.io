@@ -1,18 +1,37 @@
 html {
     background-color: #FEFEFE;
     color: #444444;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
 }
 
-body {
-    margin: 0px !important;
+nav {
+    position: fixed;
+    z-index: 10;
+    top: 4cm;
+    right: 4cm;
+} nav button {
+    width: 2cm;
+    height: 2cm;
 }
+
+.page {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+} .page .box {
+    border: 3px solid #44444433;
+    margin: 1cm;
+}
+
 
 header {
     font-size: 2cm;
-    padding: 1.5cm 2cm 2cm 4cm;
+    padding: 1.5cm 2cm 2cm 5cm;
+} header .bold {
+    font-weight: bolder;
 }
 
-header .bold {
-    font-weight: bolder;
+main {
+    padding: 1cm 2cm 2cm 15cm;
 }
