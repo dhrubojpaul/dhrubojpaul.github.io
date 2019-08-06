@@ -51,14 +51,23 @@
   font-size: .7cm;
 }
 
-.nav {
-  position: fixed;
-  top: 5vh;
-  right: 5vw;
-} .nav button {
-  width: 1.4cm;
-  height: 1.4cm;
+button {
+  width: 1.2cm;
+  height: 1.2cm;
+  
 }
+
+button.nav-left {
+  position: fixed;
+  bottom: 5vh;
+  left: 5vw;
+}
+button.nav-right {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+}
+
 
 .body {
   margin: 2vh 25vw 10vh 25vw;

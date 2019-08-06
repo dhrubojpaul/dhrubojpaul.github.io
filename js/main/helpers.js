@@ -10,10 +10,8 @@ Vue.component("dhrubo", {
                 <span class="subscript" v-if="this.$route.name.length > 0"> > {{this.$route.name}}</span>
             </div>
 
-            <div class=nav>
-                <button type=button :disabled="this.isFirst()" @click="prev"><</button>
-                <button type=button :disabled="this.isLast()" @click="next">></button>
-            </div>
+            <button type=button class=nav-left :disabled="this.isFirst()" @click="prev"><</button>
+            <button type=button class=nav-right :disabled="this.isLast()" @click="next">></button>
 
             <div class=body>
                 <router-view></router-view>   
