@@ -13,5 +13,4 @@ const app = new Vue({
     render: function(createElement) {
         return createElement(website);
     },
-    vuetify: new Vuetify(),
 }).$mount('#vue-entry');

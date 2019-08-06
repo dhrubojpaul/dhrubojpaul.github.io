@@ -11,3 +11,20 @@
   opacity: 0
 }
 /*CSS Transition Ends*/
+
+/*
+body {
+  overflow-x: hidden;
+}*/
+
+.title {
+  font-size: 1cm;
+  height: auto;
+  margin: 10vh 15vw 8vh 12vw;
+} .title .first-name {
+  font-weight: bolder;
+} .title .middle-name {
+  font-weight: inherit;
+} .title .last-name {
+  font-weight: bold;
+}
