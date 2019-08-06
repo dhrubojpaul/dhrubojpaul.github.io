@@ -1,18 +1,9 @@
 var component = {
     template: `
     <div>
-        <h1>About</h1>
-        
-        <v-btn flat @click="reset">Reset the Application</v-btn>
-        <v-footer fixed color="white"><v-spacer></v-spacer><span>created and maintained by <b>Dhrubo Paul</b></span></v-footer>
-
+        <button type=button @click="reset">Reset the Application</button>
     </div>
     `,
-    data: function(){
-        return {
-            notificationPermission: null,
-        }
-    },
     methods: {
         reset: function(){
             //unregister service worker
@@ -29,30 +20,14 @@ var component = {
             caches.keys()
             .then(function (keyList) {
               return Promise.all(keyList.map(function (key) {
-                if (key == 'buetps-precache') {
+                if (key == 'dhrubo-precache') {
                   return caches.delete(key);
                 }
               }));
             })
 
             location.reload(true);
-        },
-        showLocalNotification: function(title, body){
-            navigator.serviceWorker.ready
-            .then(function(registration){
-                registration.showNotification(title,{body});
-            })
-        },
-        askNotificationPermission: function(){
-            Notification.requestPermission((permission) => {
-                if (permission === "granted") {
-                    this.showLocalNotification("Notification Granted", "We will let you know if something comes up.");
-                }
-            });
-        },
-    },
-    mounted: function(){
-        this.notificationPermission = window.Notification.permission;
+        }
     }
 };
 

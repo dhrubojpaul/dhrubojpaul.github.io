@@ -12,19 +12,63 @@
 }
 /*CSS Transition Ends*/
 
-/*
-body {
-  overflow-x: hidden;
-}*/
+
+@font-face {
+  font-family: 'lato-light';
+  src: url('/css/Lato-Light.ttf');
+}
+@font-face {
+  font-family: 'lato-regular';
+  src: url('/css/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'lato-bold';
+  src: url('/css/Lato-bold.ttf');
+}
+@font-face {
+  font-family: 'lato-black';
+  src: url('/css/Lato-black.ttf');
+}
+
+* {
+  font-family: 'lato-regular';
+  background-color: #EDEDED;
+  color: #484848;
+}
+
 
 .title {
   font-size: 1cm;
   height: auto;
   margin: 10vh 15vw 8vh 12vw;
 } .title .first-name {
-  font-weight: bolder;
+  font-family: 'lato-black';
 } .title .middle-name {
-  font-weight: inherit;
+  font-family: 'lato-light';
 } .title .last-name {
-  font-weight: bold;
+  font-family: 'lato-regular';
+} .title .subscript {
+  font-size: .7cm;
+}
+
+.nav {
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+} .nav button {
+  width: 1.4cm;
+  height: 1.4cm;
+}
+
+.body {
+  margin: 2vh 25vw 10vh 25vw;
+}
+
+@media screen and (max-width: 900px) {
+  .title .middle-name {
+    display: none;
+  }
+  .body {
+    margin: 2vh 15vw 10vh 15vw;
+  }
 }
