@@ -1,7 +1,7 @@
 var component = {
     template: `
     <div>
-        I took Computer Science to 
+        This is my intro.
     </div>
     `
 };

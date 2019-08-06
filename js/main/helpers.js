@@ -4,14 +4,17 @@ Vue.component("dhrubo", {
     template: `
         <div class=app>
             <div class=title>
-                <span class="first-name">{{profile.firstName}}</span>
-                <span class="middle-name">{{profile.middleName}}</span>
-                <span class="last-name">{{profile.lastName}}</span>
-                <span class="subscript" v-if="this.$route.name.length > 0"> > {{this.$route.name}}</span>
+                <span class="name clickable" @click="goHome">
+                    <span class="first-name">{{profile.firstName}}</span>
+                    <span class="middle-name">{{profile.middleName}}</span>
+                    <span class="last-name">{{profile.lastName}}</span>
+                </span>
+                <span class="arrow" v-if="this.$route.name.length > 0">></span>
+                <span class="subscript" v-if="this.$route.name.length > 0">{{this.$route.name}}</span>
             </div>
 
-            <button type=button class=nav-left :disabled="this.isFirst()" @click="prev"><</button>
-            <button type=button class=nav-right :disabled="this.isLast()" @click="next">></button>
+            <div class="button nav nav-left clickable" @click="prev"></div>
+            <div class="button nav nav-right clickable" @click="next"></div>
 
             <div class=body>
                 <router-view></router-view>   
@@ -38,6 +41,9 @@ Vue.component("dhrubo", {
         },
         isFirst: function(){
             return this.index == 0;
+        },
+        goHome: function(){
+            this.index = 0;
         }
     },
     watch: {
