@@ -72,5 +72,24 @@ Vue.component("dhrubo", {
             return a[0] - b[0];
         });
         this.navigationArray = tempNavArray;
+
+
+        //navigation with arrow keys
+        this._keyListener = function(e) {
+            switch (e.keyCode) {
+                case 37 : 
+                    e.preventDefault();
+                    this.prev();
+                    break;
+                case 39 :
+                    e.preventDefault();
+                    this.next();
+                    break;
+            }
+        };
+        document.addEventListener('keydown', this._keyListener.bind(this));
+    },
+    beforeDestroy() {
+        document.removeEventListener('keydown', this._keyListener);
     }
 });

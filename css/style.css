@@ -30,6 +30,9 @@
   src: url('/css/Lato-black.ttf');
 }
 
+html {
+  overflow-y:scroll;
+}
 * {
   font-family: 'lato-regular';
   background-color: #EDEDED;
@@ -109,4 +112,32 @@ div.button.nav {
 }
 .education-title {
   font-size: larger;
+}
+
+/*experience*/
+.experience-item {
+  margin-bottom: 5vh;
+} .experience-item a {
+  text-decoration: none;
+  color: #8888BB;
+}
+.experience-duration {
+  font-size: smaller;
+}
+.experience-title {
+  font-size: larger;
+}
+
+/*contact*/
+.contact-item {
+  margin-bottom: 5vh;
+} .contact-item a {
+  text-decoration: none;
+  color: #8888BB;
+}
+.contact-title {
+  font-size: larger;
+}
+.contact-content {
+  padding: 2vh 0 0 2vw;
 }
