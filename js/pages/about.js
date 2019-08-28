@@ -1,7 +1,10 @@
 var component = {
     template: `
     <div>
-        <button type=button @click="reset">Reset the Application</button>
+        <!--<button type=button @click="reset">Reset the Application</button>-->
+        <p>The website is designed and built by me.</p>
+        <p>Technologies used: HTML, CSS, JavaScript, VueJS, VueRouter</p>
+        <p>The site is hosted in GitHub.</p>
     </div>
     `,
     methods: {

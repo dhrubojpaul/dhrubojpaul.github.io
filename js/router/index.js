@@ -13,11 +13,11 @@ const routes = [
     {path: '/home/', component: home, redirect: '/', name: "", meta:{index:0}},
     {path: '/education/', component: education, name: "Education", meta:{index:1}},
     {path: '/experience/', component: experience, name: "Experience", meta:{index:2}},
-    {path: '/research/', component: research, name: "Research", meta:{index:3}},
-    {path: '/project/', component: project, name: "Project", meta:{index:4}},
-    {path: '/cv/', component: cv, name: "CV", meta:{index:5}},
-    {path: '/contact/', component: contact, name: "Contact", meta:{index:6}},
-    {path: '/about/', component: about, name: "About", meta:{index:7}},
+    {path: '/research/', component: research, name: "Research", meta:{index:undefined}},
+    {path: '/project/', component: project, name: "Project", meta:{index:undefined}},
+    {path: '/cv/', component: cv, name: "CV", meta:{index:undefined}},
+    {path: '/contact/', component: contact, name: "Contact", meta:{index:3}},
+    {path: '/about/', component: about, name: "About", meta:{index:4}},
 ];
 
 

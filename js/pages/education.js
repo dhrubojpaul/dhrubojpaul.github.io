@@ -3,7 +3,7 @@ import profile from "/js/main/data.js";
 var component = {
     template: `
     <div>
-        <div class="education-item" v-for="item in education">
+        <div class="education-item" v-for="(item,index) in education">
             <div v-if="item.isComplete" class="education-year">{{item.month}} {{item.year}}</div>
             <div class="education-title">{{item.degree}}</div>
             <div><a :href="item.url" target=_blank>{{item.institute}}</a></div>

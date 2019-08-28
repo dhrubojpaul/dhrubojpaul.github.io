@@ -58,7 +58,7 @@ Vue.component("dhrubo", {
         var uniqueMap = new Map();
 
         tempNavArray = tempNavArray.filter((element, index) => {
-            return element.meta != undefined;
+            return element.meta != undefined && element.meta.index != undefined;
         });
 
         for(var item of tempNavArray){

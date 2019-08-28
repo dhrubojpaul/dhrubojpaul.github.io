@@ -75,11 +75,11 @@ var profile = {
         },
         {
             jobIndex: 3,
-            designation: "Research Assistant",
+            designation: "Research Assistant, Indie Lab",
             institute: "University of Florida",
             instituteURL: "http://ufl.edu",
             instituteAddress: "Gainesville, Florida, USA",
-            startDate: "August 20, 2019",
+            startDate: "August 16, 2019",
             endDate: "Present",
             isCurrent: true,
         }

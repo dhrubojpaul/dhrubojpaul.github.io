@@ -60,9 +60,9 @@ html {
 div.button.nav {
   position: fixed;
   height: 100vh;
-  width: 8vw;
+  width: 10vw;
   top:0;
-  background-color: #DFDFDF;
+  background-color: #E0E0E0;
 } div.button.nav-left {
   left: 0;
 } div.button.nav-right {
