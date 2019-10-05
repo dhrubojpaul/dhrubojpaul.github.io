@@ -13,8 +13,10 @@ Vue.component("dhrubo", {
                 <span class="subscript" v-if="this.$route.name.length > 0">{{this.$route.name}}</span>
             </div>
 
-            <div class="button nav nav-left clickable" @click="prev"></div>
-            <div class="button nav nav-right clickable" @click="next"></div>
+            <div class="button nav nav-left clickable" @click="prev">
+            </div>
+            <div class="button nav nav-right clickable" @click="next">
+            </div>
 
             <div class=body>
                 <router-view></router-view>   
