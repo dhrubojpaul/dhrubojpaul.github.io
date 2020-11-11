@@ -1,0 +1,33 @@
+.home {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.indie .theme--light.v-btn--active:before, 
+.indie .theme--light.v-btn--active:hover:before, 
+.indie .theme--light.v-btn:focus:before {
+    opacity: 0 !important;
+}
+
+/*transition*/
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition-duration: 0.2s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
+.slide-left-enter {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+.slide-left-leave-active {
+  opacity: 0;
+  transform: translate(-2em, 0);
+}
+/*transition*/
+
+.profile {
+  border-radius: 50%;
+}
