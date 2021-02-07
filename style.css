@@ -1,0 +1,102 @@
+.home {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.indie .theme--light.v-btn--active:before, 
+.indie .theme--light.v-btn--active:hover:before, 
+.indie .theme--light.v-btn:focus:before {
+    opacity: 0 !important;
+}
+
+/*transition*/
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition-duration: .25s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
+  overflow: hidden;
+}
+.slide-left-enter {
+  opacity: 0;
+  transform: translate(0, 3em);
+}
+.slide-left-leave-active {
+  opacity: 0;
+  transform: translate(0, -3em);
+}
+/*transition*/
+
+.profile {
+  border-radius: 50%;
+}
+
+.v-slide-group a{
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 14pt;
+
+  -webkit-transition: font-size .2s, font-weight .2s;
+  -moz-transition: font-size .2s, font-weight .2s;
+  -o-transition: font-size .2s, font-weight .2s;
+  transition: font-size .2s, font-weight .2s;
+} 
+.v-slide-group a:hover{
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 16pt;
+}
+.v-slide-group a.router-link-active.router-link-exact-active{
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+.router-link-active{
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 20pt;
+  font-weight: 700;
+
+  -webkit-transition: font-size .2s, font-weight .2s;
+  -moz-transition: font-size .2s, font-weight .2s;
+  -o-transition: font-size .2s, font-weight .2s;
+  transition: font-size .2s, font-weight .2s;
+}
+.router-link-active:hover{
+  font-size: 21pt;
+}
+.router-link-active.router-link-exact-active{
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 28pt;
+  font-weight: 900;
+}
+.v-slide-group__content{
+  display: inline !important;
+}
+
+input:focus {
+  -webkit-filter: drop-shadow(0px 3px 7px rgba(0,0,0,.6)); 
+  filter: drop-shadow(0px 0px 7px rgba(0,0,0,.6));
+}
+
+a {
+  color: black !important;
+}
+
+/*
+.hover {
+  -webkit-transition: filter .2s, opacity .3s ease-out;
+  -moz-transition: filter .2s, opacity .3s ease-out;
+  -o-transition: filter .2s, opacity .3s ease-out;
+  transition: filter .2s, opacity .3s ease-out;
+  
+} 
+.hover:hover {
+  -webkit-filter: drop-shadow(0px 3px 8px rgba(0,0,0,.3));
+  filter: drop-shadow(0px 0px 8px rgba(0,0,0,.3));
+}
+*/
