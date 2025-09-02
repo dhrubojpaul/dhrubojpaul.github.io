@@ -1,4 +1,4 @@
-import{j as n,P as t,g as i,D as c}from"./index-2a3tmoR7.js";function r(s){const e={h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...s.components};return t||o("Projects",!1),t.Links||o("Projects.Links",!0),n.jsxs(n.Fragment,{children:[n.jsx(e.h3,{children:"Key Courses"}),`
+import{j as n,P as t,g as i,D as c}from"./index-CoGWKtCT.js";function r(s){const e={h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...s.components};return t||o("Projects",!1),t.Links||o("Projects.Links",!0),n.jsxs(n.Fragment,{children:[n.jsx(e.h3,{children:"Key Courses"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.strong,{children:"Distributed Systems:"})," Learned about fault tolerance and consensus algorithms."]}),`
 `,n.jsxs(e.li,{children:[n.jsx(e.strong,{children:"Machine Learning:"})," Implemented foundational models from scratch."]}),`
