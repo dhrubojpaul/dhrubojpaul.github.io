@@ -1,4 +1,4 @@
-import{j as e,P as r,g as o,S as i,D as c}from"./index-DGJnHXXD.js";function t(s){const n={h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...s.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h3,{children:"Key Courses"}),`
+import{j as e,P as r,g as o,S as i,a as c}from"./index-BIfBz8Tf.js";function t(s){const n={h3:"h3",li:"li",p:"p",strong:"strong",ul:"ul",...s.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h3,{children:"Key Courses"}),`
 `,e.jsxs(n.ul,{children:[`
 `,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:"Distributed Systems:"})," Learned about fault tolerance and consensus algorithms."]}),`
 `,e.jsxs(n.li,{children:[e.jsx(n.strong,{children:"Machine Learning:"})," Implemented foundational models from scratch."]}),`
